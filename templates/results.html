@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Html Generated</title>
+  <meta name="description" content="Figma htmlGenerator">
+  <meta name="author" content="htmlGenerator">
+  <script src="{{ url_for('static', filename= 'script.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'stylesResults.css') }}">
+
+  <style>
+    /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+    body {
+      background: #E5E5E5;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class=e58_13>
+    <div class=e58_119>
+      <div class=e58_120>
+        <div class=e58_121>
+          <div class=e58_122>
+            <div class="e58_123">
+              <span class="material-symbols-outlined">
+                timer
+              </span>
+            </div>
+          </div><span class="e58_124">In the last 24 hours, {{ random_num }} people have closed deals with the same search details as
+            you.</span>
+        </div>
+        <div class=e58_125>
+          <div class="e58_126" onclick="closeCallout()">
+            <span class="material-symbols-outlined">
+              close
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--REPEATOR GRID-->
+    
+    <div class=e58_15>
+      
+      {%for result in results%}
+      <div class=e58_49><span class="e58_50">{{ result[1] }}</span>
+        <div class="e58_51"></div>
+        <div class=e58_157>
+          <div class=e58_52>
+            <div class="e58_53"></div>
+            <div class="e58_54">
+              <span class="material-symbols-outlined">
+                school
+              </span>
+            </div>
+          </div><span class="e58_60">{{ result[4] }} Education</span>
+        </div>
+        <div class=e58_158>
+          <div class=e58_55>
+            <div class="e58_56"></div>
+            <div class=e58_57>
+              <div class="e58_58">
+                <span class="material-symbols-outlined">
+                  health_and_safety
+                </span>
+              </div>
+            </div>
+          </div><span class="e58_61">{{ result[3] }} Safety</span>
+        </div><span class="e58_62">Average price:</span><span class="e58_63">300+ reviews</span><span
+          class="e58_64">Very good</span><span class="e58_65">Important info</span><span
+          class="e58_66">Email</span><span class="e58_67">${{ result[2] }}</span>
+        <!--
+
+        
+          <div class=e58_159>
+          <div class="e58_59">
+            <span class="material-symbols-outlined">
+              group
+            </span>
+          </div><span class="e58_68">4 people</span>
+        </div>
+        -->
+        <div class=e58_69>
+          <div class="e58_70"></div><span class="e58_71">View Deal</span>
+        </div>
+        <div class=e58_72>
+          <div class="e58_73"></div><span class="e58_74">8.1</span>
+        </div>
+        <div class="e58_75"></div>
+        <div class=e58_76>
+          <div class="e58_77">
+            <span class="material-symbols-outlined">
+              mail
+            </span>
+          </div>
+        </div>
+        <div class=e58_78>
+          <div class="e58_79">
+            <span class="material-symbols-outlined">
+              info
+            </span>
+          </div>
+        </div>
+        <div class="e58_80"></div>
+        <div class="e58_81"></div>
+      </div>
+      {%endfor%}
+      
+      <div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    
+    <span class="e58_89">{{ state }}: top 5 matching neighbourhoods found</span>
+    <div class=e58_90>
+      <div class="e58_91"></div>
+      <div onclick="editParams()" class=e58_92>
+        <div class="e58_93"></div><span class="e58_94">Edit</span>
+      </div>
+      <div class=e58_95><span class="e58_96">{{ state }}</span><span class="e58_97">Location</span>
+        <div class="e58_98"></div>
+      </div>
+      <div class=e58_99>
+        <div class="e58_100"></div><span class="e58_101">{{ education }}</span><span class="e58_102">Education</span>
+      </div>
+      <div class=e58_103>
+        <div class="e58_104"></div><span class="e58_105">{{ safety }}</span><span class="e58_106">Safety</span>
+      </div>
+      <div class=e58_107><span class="e58_108">${{ price_range }}</span><span class="e58_109">Price Range</span></div>
+    </div>
+    <div class=e58_110>
+      <div class="e58_111"></div>
+      <a href="/"><span class="e58_112">LaCasa.com</span></a>
+      <div class=e58_113><span class="e58_114">EN</span>
+        <div class="e58_115"></div>
+      </div>
+      <div class=e58_116>
+        <div class="e58_117"></div><span class="e58_118">Sign-in</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
