@@ -1,7 +1,6 @@
 **Background**
 --
 text here
-Test
 
 **Installation**
 --
