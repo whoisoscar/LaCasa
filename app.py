@@ -21,7 +21,7 @@ def questionaire():
             if data.get("q8") == "Yes":
                 user_safety = 5
             elif data.get("q8") == "No":
-                user_safety = 1
+                user_safety = 2
             
     
             if data.get("q9") == "Yes":
@@ -35,7 +35,7 @@ def questionaire():
 
             user_safety += int(data.get("q10"))
 
-            user_safety = int(round(user_safety/42*10,0))
+            user_safety = int(round(user_safety/25*5,0))
 
             return user_safety, user_education
 
@@ -58,12 +58,12 @@ def questionaire():
 
             user_education = user_education + (int(data.get("q5")) + int(data.get("q5")) - 1)
 
-            user_education = int(round(user_education/34*10,0))
+            user_education = int(round(user_education/34*9,0))
             
             if data.get("q8") == "Yes":
                 user_safety = 5
             elif data.get("q8") == "No":
-                user_safety = 1
+                user_safety = 2
     
             if data.get("q9") == "Yes":
                 user_safety += 2
@@ -76,7 +76,7 @@ def questionaire():
 
             user_safety += int(data.get("q10"))
 
-            user_safety = int(round(user_safety/42*10,0))
+            user_safety = int(round(user_safety/25*5,0))
 
         return user_safety, user_education
     
@@ -253,10 +253,12 @@ def search_results():
                 aux = heappop(possible_neighbours)
                 for i in LA_database:
                     if i.name == aux[1]:
-                        aux2 = [aux[0], aux[1],i.price]
+                        aux2 = [aux[0], aux[1], i.price, i.safety, i.education]
 
                 display.append(aux2)
                 display.sort(key=lambda e: (e[0], e[2]))
+            
+            return display
 
         else:
             for i in database:
@@ -274,9 +276,10 @@ def search_results():
             return display
 
 
-    print()
     results = ranking(LA_database, backend_education, backend_safety, backend_price_range[0])
+    print(results)
     for result in results:
+        print("AA",result)
         result[2] = f'{result[2]:,}'
         result[3] = letter_convert_back[result[3]]
         result[4] = letter_convert_back[result[4]]
