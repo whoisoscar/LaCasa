@@ -265,7 +265,10 @@ def search_results():
                 i.points(user_education, user_safety, user_price)
 
             while len(display) != 5:
-                aux = heappop(possible_neighbours)
+                try:
+                    aux = heappop(possible_neighbours)
+                except:
+                    return "No results found"
                 for i in LA_database:
                     if i.name == aux[1]:
                         aux2 = [aux[0], aux[1], i.price, i.safety, i.education]
@@ -277,6 +280,8 @@ def search_results():
 
 
     results = ranking(LA_database, backend_education, backend_safety, backend_price_range[0])
+    if results == "No results found":
+        return "No results found"
     print(results)
     for result in results:
         print("AA",result)
