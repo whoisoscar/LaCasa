@@ -132,4 +132,12 @@ function loadParams(){
     document.getElementsByClassName("template-detail")[0].remove()
     
   }
+  const queryString = window.location.search;
+  console.log(queryString);
+  const urlParams = new URLSearchParams(queryString);
+
+  document.getElementsByClassName("selected-value")[0].value = urlParams.get('state')
+  document.getElementsByClassName("selected-value")[1].innerHTML = urlParams.get('education')
+  document.getElementsByClassName("selected-value")[2].innerHTML = urlParams.get('safety')
+  document.getElementsByClassName("selected-value")[3].innerHTML = urlParams.get('price_range')
 }
