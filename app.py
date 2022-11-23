@@ -149,6 +149,7 @@ def search_results():
     display = []
 
     #Creating Class
+    #test
     class District:
         def __init__(self, name, education, safety, price):
             self.name = name
