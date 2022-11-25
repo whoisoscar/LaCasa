@@ -1,31 +1,42 @@
-# Background
+# LaCasa
 text here
 
+# Table of contents
+1. [Introduction](#introduction)
+2. [Installation & Usage](#Installation-&-Usage)
+3. [Further Improvements](#Further-Improvements)
+4. [Credits](#credits)
 
-# First-time install
+# Introduction
+text here
 
-## Clone files
-To install files:
+# Installation & Usage
+
+## First-time install
+
+Clone the files:
 `````
 git clone https://github.com/whoisoscar/LaCasa
 `````
 
-## Create and activate Virtual Enviornment
-Creating it:
+**Create and activate a Virtual Environment**
+
+Creating the venv:
 `````
 cd LaCasa
 python3 -m venv ./lacasa
 `````
-Activating it (each time you open the folder):
+Activating the venv (each time you open the folder):
 ````
 source ./lacasa/bin/activate
 ````
-## Install modules
-To Install Required Modules:
+**Install modules**
+
+To install required modules:
 `````
 pip install -r requirements.txt
 `````
-# Usage
+## Usage
 `````
 cd LaCasa
 `````
@@ -39,6 +50,15 @@ export FLASK_DEBUG=1
 flask run
 `````
 
-# To-do
+# Further improvements
 - [ ] Imrpove backend algo for sorting
 - [ ] Add JS dunctionalities to frontend
+
+# Credits
+This project was created for our Algorithms and Data Structures course at IE University. The project was created by: 
+- Joaquín de Tord
+- Duarte Barbosa
+- Manuel Mena
+- Simão Varandas
+- Giacomo Pedersoli
+- Oscar Tluszcz
