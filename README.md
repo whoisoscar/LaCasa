@@ -22,6 +22,12 @@ Once the algorithm is ran on our server, it returns the 5 best results in order 
 
 - The algorithm is currently limited to the state of Los Angeles, and its 67 neighbourhoods in the dataset.
 
+## File Architecture
+- `app.py` - The main flask app file that includes the routes and other app logic as well as all the sorting logic. The sorting logit includes the classes created and the algorithms used for sorting.
+- `templates` - The folder that contains all the html files used for the web-view.
+- `static` - The folder that contains all the static files used for the web-view.
+- any other files are self-explanatory.
+
 # Installation & Usage
 
 ## First-time install
