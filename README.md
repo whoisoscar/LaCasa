@@ -10,7 +10,7 @@ A flask app that reads and filters data using binary trees.
 4. [Credits](#credits)
 
 # Introduction
-This application was created for our Algorithms & Data Structures class. The project instructions were to create an app using at least of the algorithms used in class. 
+This application was created for our Algorithms & Data Structures class. The project instructions were to create an app using at least one of the algorithms used in class. 
 
 We came up with LaCasa, an app that helps you find the ideal neighbourhood using mainly Binary Trees and Heap-queues by assigning rankings to key attributes to filter and find the ideal nieghboorhood. These rankings were based uppon conclusions reached from user surveys and other reaserch. So far, the algorithm uses `Education`, `Safety` and `Price range` as attributes for determining the ideal neighbourhood.
 
