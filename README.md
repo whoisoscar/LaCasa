@@ -3,9 +3,25 @@ LaCasa aims to help you find the ideal neighbourhood.
 
 A flask app that reads and filters data using binary trees.
 
-<img src="https://i.imgur.com/QXSFwq8.png" width="300">
-<img src="https://i.imgur.com/OKcgPnI.png" width="300">
-<img src="https://i.imgur.com/xEd1SIi.png" width="600">
+<table>
+  <tr>
+    <td>
+      <img src="https://i.imgur.com/QXSFwq8.png" alt="Lorem ipsum" title="Lorem ipsum">
+    </td>
+    <td>
+      <img src="https://i.imgur.com/OKcgPnI.png" alt="Dolor sit" title="Dolor sit">
+    </td>
+    <td>
+      <img src="https://i.imgur.com/xEd1SIi.png" alt="Amet consectetur" title="Amet consectetur">
+    </td>
+  </tr>
+
+  <tr>
+    <td>Survey Pop-up</td>
+    <td>Home Page</td>
+    <td>Results Page</td>
+  </tr>
+</table>
 
 # Table of contents
 1. [Introduction](#introduction)
