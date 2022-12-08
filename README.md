@@ -1,7 +1,7 @@
 # LaCasa
 LaCasa aims to help you find the ideal neighbourhood.
 
-A flask app that reads and filters data using binary trees.
+A flask app that reads and filters data using multiple complex algorithms.
 
 <table>
   <tr>
@@ -36,9 +36,11 @@ This application was created for our Algorithms & Data Structures class. The pro
 
 We came up with LaCasa, an app that helps you find the ideal neighbourhood using mainly Binary Trees and Heap-queues by assigning rankings to key attributes to filter and find the ideal neighbourhood. These rankings were based upon conclusions reached from user surveys and other research. So far, the algorithm uses `Education`, `Safety` and `Price range` as attributes for determining the ideal neighbourhood.
 
+**User Journey:**
+
 The app is accessed from a web-view where the user is prompted with a 10-question survey to help determine his levels of preference for the aforementioned factors *(look at survey screenshot for reference)*. Alternatively, the user can also do this manually by exiting the form, and on the main page, entering the values (ranked A-D) manually if they are familiar with the rankings *(look at homepage screenshot for reference)*.
 
-Once the algorithm is run on our server, it returns the 5 best results in order of relevance and displays them on the web-page where the complete result details are displayed. The user can then edit the search queries, and re-run the algorithm to find a new set of results *(look at results screenshot for reference)*.
+Once the algorithm is run on our server, it returns the 5 best results in order of relevance and displays them on the web-page where the complete result details are displayed. If two results have the same relevace level, the cheapest one is displayed first. The user can then edit the search queries, and re-run the algorithm to find a new set of results *(look at results screenshot for reference)*.
 
 **Limitations**
 
@@ -60,7 +62,7 @@ The dataset provides information about 67 neighbourhoods in the LA region. Its c
 This dataset was manually constructed by our group, taking as a source Niche.com *(check bibliography for reference)*. Niche provides ratings for the previously mentioned variables in letters ranging from D+ to A+.
 
 # Installation & Usage
-
+*Note: all code below is intended to be run in the terminal/command line*
 ## First-time install
 
 Clone the files:
