@@ -111,7 +111,7 @@ flask run
 # Resources Used
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 - [Heapq](https://docs.python.org/3/library/heapq.html)
-- [Niche.com](https://www.niche.com/)
+- [Niche.com](https://www.niche.com/places-to-live/search/safest-neighborhoods/m/los-angeles-metro-area/)
 - [Figma](https://www.figma.com/)
 
 # Credits
